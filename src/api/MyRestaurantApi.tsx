@@ -115,7 +115,7 @@ export const useUpdateMyRestaurant = () => {
   return { updateRestaurant, isLoading };
 };
 
-const useGetMyRestaurantOrders = () => {
+export const useGetMyRestaurantOrders = () => {
   const { getAccessTokenSilently } = useAuth0();
 
   const useGetMyRestaurantOrdersRequest = async (): Promise<Order[]> => {
